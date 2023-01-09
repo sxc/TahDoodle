@@ -11,6 +11,10 @@
 		EEED2FBA2966C42700CF1221 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED2FB92966C42700CF1221 /* ContentView.swift */; };
 		EEED2FBC2966C42A00CF1221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEED2FBB2966C42A00CF1221 /* Assets.xcassets */; };
 		EEED2FC02966C42A00CF1221 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEED2FBF2966C42A00CF1221 /* Preview Assets.xcassets */; };
+		EEED2FC72966C48A00CF1221 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED2FC62966C48A00CF1221 /* TaskView.swift */; };
+		EEED2FC92966C59700CF1221 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED2FC82966C59700CF1221 /* Task.swift */; };
+		EEED2FCB2966C5BA00CF1221 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED2FCA2966C5BA00CF1221 /* TaskStore.swift */; };
+		EEED2FCD2966C72F00CF1221 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED2FCC2966C72F00CF1221 /* TaskListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		EEED2FBB2966C42A00CF1221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEED2FBD2966C42A00CF1221 /* TahDoodle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TahDoodle.entitlements; sourceTree = "<group>"; };
 		EEED2FBF2966C42A00CF1221 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEED2FC62966C48A00CF1221 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		EEED2FC82966C59700CF1221 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		EEED2FCA2966C5BA00CF1221 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		EEED2FCC2966C72F00CF1221 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				EEED2FBB2966C42A00CF1221 /* Assets.xcassets */,
 				EEED2FBD2966C42A00CF1221 /* TahDoodle.entitlements */,
 				EEED2FBE2966C42A00CF1221 /* Preview Content */,
+				EEED2FC62966C48A00CF1221 /* TaskView.swift */,
+				EEED2FC82966C59700CF1221 /* Task.swift */,
+				EEED2FCA2966C5BA00CF1221 /* TaskStore.swift */,
+				EEED2FCC2966C72F00CF1221 /* TaskListView.swift */,
 			);
 			path = TahDoodle;
 			sourceTree = "<group>";
@@ -139,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEED2FCB2966C5BA00CF1221 /* TaskStore.swift in Sources */,
+				EEED2FC92966C59700CF1221 /* Task.swift in Sources */,
+				EEED2FC72966C48A00CF1221 /* TaskView.swift in Sources */,
 				EEED2FBA2966C42700CF1221 /* ContentView.swift in Sources */,
 				EEED2FB82966C42700CF1221 /* TahDoodleApp.swift in Sources */,
+				EEED2FCD2966C72F00CF1221 /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

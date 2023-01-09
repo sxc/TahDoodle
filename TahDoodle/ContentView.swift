@@ -8,19 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let taskStore: TaskStore
+    @State private var newTaskTitle = ""
+    
+    private var newTaskView: some View {
+        HStack {
+            TextField("Something to do", text: $newTaskTitle)
+            Button("Add Task") {
+//#warning("The task title is hardcoded")
+                let task = Task(title: newTaskTitle)
+                taskStore.add(task)
+                newTaskTitle = ""
+            }.disabled(newTaskTitle.isEmpty)
+        }.padding()
+    }
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            newTaskView
+            TaskListView(taskStore: taskStore)
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(taskStore: .sample)
     }
 }
